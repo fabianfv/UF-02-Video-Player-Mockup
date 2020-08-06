@@ -1,0 +1,74 @@
+body {
+  background-image: url("../img/palma_de_mallorca-big.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.video-controls {
+  background-color: #333230;
+  color: white;
+  font-family: Arial, sans;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 1%;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 1%;
+}
+
+.volume, .full-screen {
+  display: flex;
+  flex: 1 1 0;
+}
+
+.volume {
+  align-items: center;
+}
+
+.full-screen {
+  justify-content: flex-end;
+}
+
+.slider {
+  border: 0.3vh solid white;
+  border-radius: 10%;
+  width: calc(5rem + 5vw);
+}
+
+.time-slider {
+  flex: 1 1 0;
+}
+
+.play {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 5rem;
+  margin: 0 10%;
+}
+
+
+.bottom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
